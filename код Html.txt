@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Магазин</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div id="logo" onclick="slowScroll('#top')">
+        <span>Shein</span>
+    </div>
+    <div id="about">
+        <a href="#" title="Возможности" onclick="slowScroll('#main')">Мумкіндіктер</a>
+        <a href="#" onclick="slowScroll('#overview')" title="Преимущества">Артыкшылыктары</a>
+        <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Байланыстар</a>
+
+    </div>
+</header>
+
+<div id="top">
+    <h1>Қош келдіңіздер</h1>
+    <h3>Shein интернет-дүкен!</h3>
+</div>
+
+<div id="main">
+    <div class="intro">
+        <h2>Неліктен Shein интернет-дүкені?</h2>
+        <span>Шейн сауда платформасының басты артықшылығы-әртүрлі өнімдердің кең ассортименті.</span>
+    </div>
+    <div class="text">
+        <span>Осы мақалада жазғанымыздай, Shein дүкені-бұл ерлерге, әйелдерге және балаларға арналған киім, аяқ киім және аксессуарларды сатуға мамандандырылған ірі сауда алаңы. Компания Ұлыбританияда орналасқан, бірақ әртүрлі елдерде бөлімшелері бар және Ресейге, Украинаға, Беларуссияға және ТМД мен әлемнің басқа елдеріне жеткізуді ұсынады.!!</span>
+    </div>
+</div>
+
+
+<div id="overview">
+    <h2>Танымал киімдер</h2>
+    <h4>Біз тауарлардың үлкен ассортиментін ұсынамыз!</h4>
+
+
+    <div class="img">
+        <img src="https://intertop.kz/upload/resize_cache/iblock/37a/521_710_1/czvcq3j651jor2rprsxz4jfh241qnrt2.jpg" alt="">
+        <span>Свитшот Lee</span>
+        <p class="nn">30 590тг</p>
+
+        <p>өлшемдер:</p>
+        <br>
+        <p>
+            <a href="#"><button class="b">XS</button></a>
+            <button class="b">M</button>
+            <button class="b">S</button>
+        </p>
+        <br>
+        <button type="button" name="run_script">Себеткеге салу</button>
+
+    </div>
+    <div class="img">
+        <img src="https://intertop.kz/upload/resize_cache/iblock/81f/521_710_1/a9775qoldg1u9fwd91o1utowfd8657u8.jpg" alt="">
+        <span>Спорттық куртка PUMA</span>
+        <p class="nn">41 990тг</p>
+        <p>өлшемдер:</p>
+        <br>
+        <p>
+            <a href="#"><button class="b">XL</button></a>
+            <a href="#"><button class="b">XS</button></a>
+            <button class="b">M</button>
+            <button class="b">S</button>
+        </p>
+        <br>
+        <button type="button" name="run_script">Себеткеге салу</button>
+    </div>
+</div>
+<div id="overview">
+
+    <div class="img">
+        <img src="https://intertop.kz/upload/resize_cache/iblock/92c/521_710_1/rymouzkrd27llit36p8vy60qxiuferye.jpg" alt="">
+        <span>Armani Exchange</span>
+        <p class="nn">154 990тг</p>
+        <p>өлшемдер:</p>
+        <br>
+        <p>
+            <a href="#"><button class="b">XS</button></a>
+            <button class="b">M</button>
+            <button class="b">S</button>
+        </p>
+        <br>
+        <button type="button" name="run_script">Себеткеге салу</button>
+    </div>
+    <div class="img">
+        <img src="https://intertop.kz/upload/resize_cache/iblock/779/521_710_1/a69mnzpv11cka5c24acntm4oczz0vzf4.jpg" alt="">
+        <span>ADIDAS pants</span>
+        <p class="nn">29 590тг</p>
+        <p>өлшемдер:</p>
+        <br>
+        <p>
+            <a href="#"><button class="b">46</button></a>
+            <a href="#"><button class="b">42</button></a>
+            <a href="#"><button class="b">40</button></a>
+            <button class="b">36</button>
+            <button class="b">34</button>
+        </p>
+        <br>
+
+        <button type="button" name="run_script">Себеткеге салу</button>
+    </div>
+</div>
+
+<div id="contacts">
+    <center><h5>Кері байланыс</h5></center>
+    <form id="form_input">
+        <label for="name">Аты <span>:</span></label><br>
+        <input type="text" placeholder="Атын енгізіңіз" name="name" id="name"><br>
+        <label for="email">Сіздің поштаңыз <span>:</span></label><br>
+        <input type="email" placeholder="Email енгізіңіз" name="email" id="email"><br>
+        <label for="message">Хабарлама <span>:</span></label><br>
+        <textarea placeholder="Хабарламаңызды енгізіңіз" name="message" id="message"></textarea><br>
+        <div id="mess_send" class="btn">Жіберу</div>
+    </form>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    function slowScroll(id) {
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+        }, 500);
+    }
+
+    $(document).on("scroll", function () {
+        if($(window).scrollTop() === 0)
+            $("header").removeClass("fixed");
+        else
+            $("header").attr("class", "fixed");
+    });
+</script>
+</body>
+</html>
